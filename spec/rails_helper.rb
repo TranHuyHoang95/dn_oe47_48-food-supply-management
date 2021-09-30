@@ -2,6 +2,8 @@ require "spec_helper"
 require "factory_bot"
 require "shared_examples/logged_in_false"
 require "shared_examples/is_admin_false"
+require "shared_examples/order/update_cannt_change"
+require "shared_examples/order/update_success"
 
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../config/environment', __dir__)

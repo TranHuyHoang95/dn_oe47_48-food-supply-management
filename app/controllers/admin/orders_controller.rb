@@ -44,8 +44,6 @@ class Admin::OrdersController < Admin::AdminsController
     return @message_key = message_arr[0] if message_arr
 
     return @message_key = "update_sc" if @order.update(status: p_status)
-
-    @message_key = "update_failed"
   end
 
   def check_message_case order, p_status
